@@ -1,0 +1,93 @@
+body {
+  background-color: hsl(30, 38%, 92%);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-family: Fraunces;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+}
+
+p,
+h2 {
+  font-family: Montserrat;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1rem;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.6rem;
+}
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: hsl(228, 12%, 48%);
+  font-size: 1rem;
+}
+.card {
+  background-color: white;
+  display: inline-block;
+  max-width: 720px;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+.card-image {
+  background-image: url(images/image-product-mobile.jpg);
+  background-size: cover;
+  flex: 1;
+  min-height: 280px;
+  border-radius: 20px 20px 0 0;
+  padding: 3rem;
+}
+.card-image img {
+  width: 100%;
+}
+.card-content {
+  flex: 1;
+  align-self: center;
+  padding: 3rem;
+}
+.card-price {
+  display: flex;
+  align-items: center;
+}
+.price {
+  margin-right: 1rem;
+  color: hsl(158, 36%, 37%);
+  font-family: Fraunces;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.price2 {
+  text-decoration: line-through;
+}
+.card-button {
+  display: block;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  font-family: Montserrat;
+  font-size: 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .card-container {
+    flex-direction: row;
+  }
+  .card-image {
+    background-image: url(images/image-product-desktop.jpg);
+    border-radius: 20px 0 0 20px;
+  }
+}
